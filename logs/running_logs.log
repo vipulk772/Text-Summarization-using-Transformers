@@ -36,3 +36,9 @@ Source-Age: 1
 
 ]
 [2023-10-21 00:27:43,379: INFO: main:  stage {STAGE_NAME} completed]
+[2023-10-21 15:15:43,826: INFO: main:  stage {STAGE_NAME} started]
+[2023-10-21 15:15:43,840: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 15:15:43,880: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 15:15:43,880: INFO: common: created directory at: artifacts]
+[2023-10-21 15:15:43,887: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-21 15:15:43,888: INFO: main:  stage {STAGE_NAME} completed]
