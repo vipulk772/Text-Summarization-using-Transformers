@@ -21,6 +21,7 @@ class DataTransformationConfig:
     root_dir: Path
     data_path: Path
     tokenizer_name: Path
+<<<<<<< HEAD
 
 @dataclass(frozen=True)
 class ModelTrainerConfig:
@@ -45,3 +46,5 @@ class ModelEvaluationConfig:
     model_path: Path
     tokenizer_path: Path
     metric_file_name: Path
+=======
+>>>>>>> 66f7e0b57f0a1b628036834ea12b7340ac5542af

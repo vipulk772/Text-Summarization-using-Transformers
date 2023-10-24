@@ -48,6 +48,7 @@ Source-Age: 1
 [2023-10-21 15:39:10,881: INFO: common: created directory at: artifacts]
 [2023-10-21 15:39:10,881: INFO: common: created directory at: artifacts/data_transformation]
 [2023-10-21 15:39:25,865: INFO: main:  stage Data Transformation Stage completed]
+<<<<<<< HEAD
 [2023-10-21 16:08:53,112: INFO: main:  stage Model Training Stage started]
 [2023-10-21 16:08:53,118: INFO: common: yaml file: config\config.yaml loaded successfully]
 [2023-10-21 16:08:53,126: INFO: common: yaml file: params.yaml loaded successfully]
@@ -267,3 +268,5 @@ huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form
 [2023-10-25 00:05:07,872: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x]
+=======
+>>>>>>> 66f7e0b57f0a1b628036834ea12b7340ac5542af
