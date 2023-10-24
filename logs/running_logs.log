@@ -1,0 +1,269 @@
+[2023-10-21 00:27:16,676: ERROR: main: 'Logger' object has no attribute 'ingo']
+Traceback (most recent call last):
+  File "main.py", line 6, in <module>
+    logger.ingo(" stage {STAGE_NAME} started")
+AttributeError: 'Logger' object has no attribute 'ingo'
+[2023-10-21 00:27:38,759: INFO: main:  stage {STAGE_NAME} started]
+[2023-10-21 00:27:38,765: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 00:27:38,766: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 00:27:38,814: INFO: common: created directory at: artifacts]
+[2023-10-21 00:27:38,815: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-21 00:27:43,087: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8686:61BF:40AA79:4F578D:6532CDA3
+Accept-Ranges: bytes
+Date: Fri, 20 Oct 2023 18:57:42 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10249-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1697828261.786402,VS0,VE1648
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8b6e2b697be17ba7419bae4a290a6f60ce2936d6
+Expires: Fri, 20 Oct 2023 19:02:42 GMT
+Source-Age: 1
+
+]
+[2023-10-21 00:27:43,379: INFO: main:  stage {STAGE_NAME} completed]
+[2023-10-21 15:15:43,826: INFO: main:  stage {STAGE_NAME} started]
+[2023-10-21 15:15:43,840: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 15:15:43,880: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 15:15:43,880: INFO: common: created directory at: artifacts]
+[2023-10-21 15:15:43,887: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-21 15:15:43,888: INFO: main:  stage {STAGE_NAME} completed]
+[2023-10-21 15:39:10,878: INFO: main:  stage Data Transformation Stage started]
+[2023-10-21 15:39:10,881: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 15:39:10,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 15:39:10,881: INFO: common: created directory at: artifacts]
+[2023-10-21 15:39:10,881: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-21 15:39:25,865: INFO: main:  stage Data Transformation Stage completed]
+[2023-10-21 16:08:53,112: INFO: main:  stage Model Training Stage started]
+[2023-10-21 16:08:53,118: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 16:08:53,126: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 16:08:53,127: INFO: common: created directory at: artifacts]
+[2023-10-21 16:08:53,127: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-21 16:12:50,745: ERROR: main: '>' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    data_ingestion.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 115, in __init__
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\training_args.py", line 1305, in __post_init__
+    if self.evaluation_strategy == IntervalStrategy.STEPS and self.eval_steps > 1:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2023-10-21 16:20:06,677: INFO: main:  stage Model Training Stage started]
+[2023-10-21 16:20:06,703: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 16:20:06,707: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 16:20:06,707: INFO: common: created directory at: artifacts]
+[2023-10-21 16:20:06,708: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-21 16:20:39,549: ERROR: main: '>' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    data_ingestion.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 115, in __init__
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\training_args.py", line 1305, in __post_init__
+    if self.evaluation_strategy == IntervalStrategy.STEPS and self.eval_steps > 1:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2023-10-21 16:27:00,253: INFO: main:  stage Model Training Stage started]
+[2023-10-21 16:27:00,253: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 16:27:00,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 16:27:00,253: INFO: common: created directory at: artifacts]
+[2023-10-21 16:27:00,253: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-21 16:27:32,561: ERROR: main: '>' not supported between instances of 'str' and 'int']
+Traceback (most recent call last):
+  File "main.py", line 45, in <module>
+    data_ingestion.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\model_trainer.py", line 25, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 115, in __init__
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\training_args.py", line 1305, in __post_init__
+    if self.evaluation_strategy == IntervalStrategy.STEPS and self.eval_steps > 1:
+TypeError: '>' not supported between instances of 'str' and 'int'
+[2023-10-21 16:31:43,531: INFO: main:  stage Model Training Stage started]
+[2023-10-21 16:31:43,563: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-21 16:31:43,563: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-21 16:31:43,563: INFO: common: created directory at: artifacts]
+[2023-10-21 16:31:43,563: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-23 19:52:08,564: INFO: main:  stage Model Training Stage started]
+[2023-10-23 19:52:08,591: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-23 19:52:08,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-23 19:52:08,600: INFO: common: created directory at: artifacts]
+[2023-10-23 19:52:08,600: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-23 19:52:51,507: INFO: main:  stage Data Transformation Stage started]
+[2023-10-23 19:52:51,523: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-23 19:52:51,527: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-23 19:52:51,529: INFO: common: created directory at: artifacts]
+[2023-10-23 19:52:51,529: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-23 19:52:53,105: ERROR: main: Directory artifacts/data_ingestion/samsum_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.]
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    data_ingestion.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\data_transformation.py", line 30, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\load.py", line 2252, in load_from_disk
+    raise FileNotFoundError(
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset is neither a `Dataset` directory nor a `DatasetDict` directory.
+[2023-10-23 19:54:20,058: INFO: main:  stage Data Ingestion Stage started]
+[2023-10-23 19:54:20,072: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-23 19:54:20,077: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-23 19:54:20,079: INFO: common: created directory at: artifacts]
+[2023-10-23 19:54:20,079: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-23 20:02:41,308: INFO: main:  stage Data Ingestion Stage started]
+[2023-10-23 20:02:41,309: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-23 20:02:41,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-23 20:02:41,316: INFO: common: created directory at: artifacts]
+[2023-10-23 20:02:41,317: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-23 20:02:44,125: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CEF0:182E:231F71:2A377E:65368409
+Accept-Ranges: bytes
+Date: Mon, 23 Oct 2023 14:32:43 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10235-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1698071562.497922,VS0,VE544
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 42fdece3cdfb4b73c3d1e3d0ff6bde56a84876d2
+Expires: Mon, 23 Oct 2023 14:37:43 GMT
+Source-Age: 0
+
+]
+[2023-10-23 20:02:44,290: INFO: main:  stage Data Ingestion Stage completed]
+[2023-10-24 17:52:37,792: INFO: main:  stage Data Validation Stage started]
+[2023-10-24 17:52:37,839: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 17:52:37,839: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 17:52:37,839: INFO: common: created directory at: artifacts]
+[2023-10-24 17:52:37,839: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-24 17:52:37,839: INFO: main:  stage Data Validation Stage completed]
+[2023-10-24 17:52:37,839: INFO: main:  stage Data Transformation Stage started]
+[2023-10-24 17:52:37,854: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 17:52:37,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 17:52:37,854: INFO: common: created directory at: artifacts]
+[2023-10-24 17:52:37,854: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-24 17:52:40,114: ERROR: main: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]]
+Traceback (most recent call last):
+  File "main.py", line 33, in <module>
+    data_ingestion.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\data_transformation.py", line 31, in convert
+    dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\dataset_dict.py", line 853, in map
+    {
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\dataset_dict.py", line 854, in <dictcomp>
+    k: dataset.map(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\arrow_dataset.py", line 592, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\arrow_dataset.py", line 557, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\arrow_dataset.py", line 3097, in map
+    for rank, done, content in Dataset._map_single(**dataset_kwargs):
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\arrow_dataset.py", line 3474, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\datasets\arrow_dataset.py", line 3353, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\data_transformation.py", line 17, in convert_examples_to_features
+    input_encodings = self.tokenizer(example_batch['dialogue'] , max_length = 1024, truncation = True )
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\tokenization_utils_base.py", line 2790, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\tokenization_utils_base.py", line 2876, in _call_one
+    return self.batch_encode_plus(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\tokenization_utils_base.py", line 3067, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\tokenization_utils_fast.py", line 504, in _batch_encode_plus
+    encodings = self._tokenizer.encode_batch(
+TypeError: TextEncodeInput must be Union[TextInputSequence, Tuple[InputSequence, InputSequence]]
+[2023-10-24 18:10:07,842: INFO: main:  stage Data Validation Stage started]
+[2023-10-24 18:10:07,842: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 18:10:07,842: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 18:10:07,842: INFO: common: created directory at: artifacts]
+[2023-10-24 18:10:07,842: INFO: common: created directory at: artifacts/data_validation]
+[2023-10-24 18:10:07,842: INFO: main:  stage Data Validation Stage completed]
+[2023-10-24 18:10:07,842: INFO: main:  stage Data Transformation Stage started]
+[2023-10-24 18:10:07,858: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 18:10:07,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 18:10:07,858: INFO: common: created directory at: artifacts]
+[2023-10-24 18:10:07,858: INFO: common: created directory at: artifacts/data_transformation]
+[2023-10-24 18:10:10,281: INFO: main:  stage Data Transformation Stage completed]
+[2023-10-24 18:10:10,281: INFO: main:  stage Model Training Stage started]
+[2023-10-24 18:10:10,281: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 18:10:10,281: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 18:10:10,281: INFO: common: created directory at: artifacts]
+[2023-10-24 18:10:10,281: INFO: common: created directory at: artifacts/model_trainer]
+[2023-10-24 22:02:21,413: INFO: main:  stage Model Training Stage completed]
+[2023-10-24 23:52:55,374: INFO: main: *******************]
+[2023-10-24 23:52:55,403: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-10-24 23:52:55,403: ERROR: main: name 'ModelEvaluationTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 57, in <module>
+    model_evaluation = ModelEvaluationTrainingPipeline()
+NameError: name 'ModelEvaluationTrainingPipeline' is not defined
+[2023-10-24 23:54:10,955: INFO: main: *******************]
+[2023-10-24 23:54:10,956: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-10-24 23:54:10,962: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 23:54:10,982: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 23:54:11,005: INFO: common: created directory at: artifacts]
+[2023-10-24 23:54:11,006: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-24 23:54:11,006: ERROR: main: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.]
+Traceback (most recent call last):
+  File "main.py", line 59, in <module>
+    model_evaluation.main()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\pipeline\stage_05_model_evaluation.py", line 16, in main
+    model_evaluation_config.evaluate()
+  File "g:\ete\text summarization using transformers\text-summarization-using-transformers\src\textSummarizer\conponents\model_evaluation.py", line 60, in evaluate
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 701, in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 534, in get_tokenizer_config
+    resolved_config_file = cached_file(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\transformers\utils\hub.py", line 429, in cached_file
+    resolved_file = hf_hub_download(
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\huggingface_hub\utils\_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\vipul\anaconda3\envs\texts\lib\site-packages\huggingface_hub\utils\_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/tokenizer'. Use `repo_type` argument if needed.
+[2023-10-24 23:56:06,306: INFO: main: *******************]
+[2023-10-24 23:56:06,306: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2023-10-24 23:56:06,311: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-24 23:56:06,313: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-24 23:56:06,314: INFO: common: created directory at: artifacts]
+[2023-10-24 23:56:06,314: INFO: common: created directory at: artifacts/model_evaluation]
+[2023-10-25 00:05:07,141: INFO: rouge_scorer: Using default tokenizer.]
+[2023-10-25 00:05:07,872: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
